@@ -87,7 +87,7 @@ print("**exo10 reunion de trois listes sans doublon")
 liste10=[1,2,3,4,5,6,7,8,9]
 liste11=[3,4,5,6,7,8]
 liste12=[0,6,7,8,12]
-liste_ensemble=list(set(liste10)and set(liste11)and set(liste12))
+liste_ensemble=list(set(liste10)| set(liste11)| set(liste12))
 print("La reunion des listes sans aucun doublon:",liste_ensemble)
         
         
