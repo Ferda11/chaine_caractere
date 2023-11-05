@@ -37,4 +37,61 @@ for i in range(0,len(list_complete),3):
     tipl=tuple(list_complete[i:i+3])
     liste_trois.append(tipl)
 print("La liste avec les 3 elements dans un tuple est:",liste_trois)
+print()
+
+print("* exo6*Supprimer les doublons d'une liste")
+liste_origin=[22,10,10,34,56,56,34,12,21,12,56]
+list_sansDoublon=list(set(liste_origin))
+print("La liste sans doublon est:",list_sansDoublon) 
+print()
+
+print("**exo7 creation d'une liste avec des elements communs de deux listes")
+liste1=[0,1,2,3,4,5,6,7,8,9,10]
+liste2=[20,10,4,7,12,3,6,30,9,8,0,31,1]
+print("Les deux listes , liste1:",liste1,"liste2:",liste2)
+
+liste3=[]
+for i in liste1:
+    if i in liste2:
+        liste3.append(i)
+print("la nouvelle liste avec les elements communs:",liste3)
+print()
+
+print("**exo8 creation d'une liste avec des elements distingue de deux listes")
+liste_1=[0,1,2,3,4,5,6,7,8,9,10]
+liste_2=[20,10,4,7,12,3,6,30,9,8,0,31,1]
+print("Les deux listes , liste1:",liste1,"liste2:",liste2)
+
+liste_distenge1=[]
+liste_distenge2=[]
+for i in liste_1:
+    if  not i in liste_2:
+        liste_distenge1.append(i)
+for j in liste_2:
+    if not j in liste_1:
+        liste_distenge2.append(j)
+liste_distenge=liste_distenge1+liste_distenge2              
+print("la nouvelle liste avec les elements distingues:",liste_distenge)
+print()
+
+print("**exo9 creation de deux listes avec les cles et les valeurs d'un dictionnaire")
+dictionnaire={'Nom':"Fleurimond",'Prenom':"Ferda","sexe":"Feminin",'Age':21}
+liste_cle=list(dictionnaire.keys())
+liste_valeur=list(dictionnaire.values())
+print("La liste contenant les cles :",liste_cle)
+print()
+print("La liste contenant les valeurs:",liste_valeur)
+print()
+
+print("**exo10 reunion de trois listes sans doublon")
+liste10=[1,2,3,4,5,6,7,8,9]
+liste11=[3,4,5,6,7,8]
+liste12=[0,6,7,8,12]
+liste_ensemble=list(set(liste10)and set(liste11)and set(liste12))
+print("La reunion des listes sans aucun doublon:",liste_ensemble)
+        
+        
+    
+
+    
     
